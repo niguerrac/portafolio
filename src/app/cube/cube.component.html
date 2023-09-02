@@ -1,0 +1,106 @@
+
+  <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Nilson</title>
+  </head>
+  <body>
+
+    <canvas id="bg"></canvas>   
+
+    <main>
+
+      <header>
+        <h1>Nilson Guerra</h1>
+        <p>Desarrollador informatico</p>
+      </header>
+
+
+      <h1 class="title">
+        <p>10 años de experiencia como 
+          desarrollador de aplicaciones y
+           escepecialicacion en unity3D</p>
+          </h1>
+      <section>
+        <h2>Información de contacto</h2>
+        <p>Linkedin: https://www.linkedin.com/in/nilson-guerra-cabeza-programador/</p>
+
+        <p>Dirección: Concepción, Biobio, Chile</p>
+
+        <p>Correo electrónico: nguerracabeza@gmail.com</p>
+
+      </section>
+
+      <section class="light">
+        <h2>Formación académica: {{valorScroll}}</h2>
+
+        <p>Ingeniero en Computación e Informática, Universidad del BioBio, 2014</p>
+
+        <h2>Logros</h2>
+
+        <p> </p>
+
+      </section>
+
+      
+
+      <section class="left">
+        <h2>Experiencia laboral:</h2>
+
+        <h3>Qualitat</h3>
+        <p>Desarrollador de aplicaciones para Android, PC y Realidad Virtual, 2014-2021<br>
+          Responsabilidades:<br>
+          Llevar aplicaciones de PC a dispositivos móviles.<br>
+          Crear aplicaciones para proyectos, principalmente simuladores de realidad virtual.<br>
+          Simuladores para capacitacion de personal en distintas areas de la industria
+          </p>
+        <h3>Innod</h3>
+        <p>Proyectos de realidad virtual y realidad aumentada, 2023<br>
+          Creación de software y programación de integraciones con realidad virtual <br>
+          Porte de aplicaciones de realidad virtual a pc<br>
+          Realidad Aumentada para ios
+        </p>
+        <h3>Universidad San Sebastian</h3>
+        <p>
+          Docencia en industrias creativas, 2022-2023<br>
+          Enseñanza de nuevas tecnologías y herramientas a estudiantes.
+        </p>
+        <h4>Orbitante studio</h4>
+        <p>
+          Docencia en industrias creativas, 2020-2023<br>
+          Creación de software y programación de integraciones con realidad virtual <br>
+        </p>
+        <h3>Universidad De Concepción</h3>
+        <p>
+          Proyectos
+           de investigación de ergonomía, 2022-2023<br>
+          Desarrollo de prototipos informáticos y adaptaciones electrónicas para monitorial articulaciones.
+          Software de alizis y calculo de datos relacionados con posiciones de trabajo
+        </p>
+
+      </section>
+
+      
+      <blockquote>
+        <p>Gracias</p>
+        <app-videos></app-videos>
+      </blockquote>
+      
+      <div class="input-container">
+        <label for="quantity">X</label>
+        <input type="number" step="0.1" [(ngModel)]="inputValue" (input)="handleChange()" placeholder="Ingrese un valor">
+        <label for="quantity" color="red" >Y</label>
+        <input type="number" step="0.1" [(ngModel)]="inputValueY" (input)="handleChangeY()" placeholder="Ingrese un valor">
+        <label for="quantity" color="red" >Z</label>
+        <input type="number" step="0.1" [(ngModel)]="inputValueZ" (input)="handleChangeZ()" placeholder="Ingrese un valor">
+      
+      </div>
+      
+    </main>
+    
+  </body>
+
+  
